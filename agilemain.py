@@ -15,12 +15,12 @@ def show_menu():
 def add_notice():
     title = input("Enter title of notice: ")
     content = input("Enter content of notice: ")
-    expiry = input("Enter expiry date (YYYY-MM-DD): ")
+    expiry = input("Enter date of expiry (YYYY-MM-DD): ")
 
     try:
         expiry_date = datetime.strptime(expiry, "%Y-%m-%d").date()
     except ValueError:
-        print("Format of the date is invalid")
+        print("Format of date is invalid")
         return
 
     notices.append({
