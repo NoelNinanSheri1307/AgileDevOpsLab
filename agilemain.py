@@ -47,7 +47,7 @@ def view_notices():
 
 # ---------- Member 3: Search Notice ----------
 def search_notice():
-    keyword = input("Enter keyword to search: ").lower()
+    keyword = input("Enter the keyword to search: ").lower()
     found = False
 
     for n in notices:
@@ -58,7 +58,7 @@ def search_notice():
             found = True
 
     if not found:
-        print("No matching notices found")
+        print("No matching notices have been found")
 
 # ---------- Member 4: Delete Expired Notices ----------
 def delete_expired_notices():
