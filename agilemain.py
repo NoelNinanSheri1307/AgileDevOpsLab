@@ -20,7 +20,7 @@ def add_notice():
     try:
         expiry_date = datetime.strptime(expiry, "%Y-%m-%d").date()
     except ValueError:
-        print("Invalid date format")
+        print("Format of the date is invalid")
         return
 
     notices.append({
@@ -28,12 +28,12 @@ def add_notice():
         "content": content,
         "expiry": expiry_date
     })
-    print("Notice added successfully")
+    print("Notices have been added successfully")
 
 # ---------- Member 2: View Notices ----------
 def view_notices():
     if not notices:
-        print("No notices available")
+        print("No notices are available")
         return
 
     print("\n--- Active Notices ---")
