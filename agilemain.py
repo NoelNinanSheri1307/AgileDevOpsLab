@@ -5,7 +5,7 @@ notices = []
 # ---------- Owner: Base Notice Board ----------
 def show_menu():
     print("\n===== Digital Notices Board =====")
-    print("1. Add Notices")
+    print("1. Add new Notices")
     print("2. View Notices")
     print("3. Search Notices")
     print("4. Delete Expired Notices")
@@ -13,8 +13,8 @@ def show_menu():
 
 # ---------- Member 1: Add Notice ----------
 def add_notice():
-    title = input("Enter title of notice: ")
-    content = input("Enter content of notice: ")
+    title = input("Enter title of the notice: ")
+    content = input("Enter content of the notice: ")
     expiry = input("Enter date of expiry (YYYY-MM-DD): ")
 
     try:
